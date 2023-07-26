@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+/* estilos header*/
+.menu-izq a{
+    font-size: 14px;;
+}
+.menu-izq a:nth-child(3){
+    font-size: 14px;
+    color: grey;
+    color: rgb(87, 87, 87);
+
+}
+.menu-der .btn:hover{
+    background-color: black;
+    color: white;
+}
+.menu-der .btn{
+    border: 1px solid black;
+    color: black;
+
+}
+.user img{
+   width: 50px;
+}
+
+/* estilos imagen*/
+
+.mainheader{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png');
+    filter: grayscale(.8);
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mainheader h1{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* estilos header*/
+.title{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 50px;
+}
+.contenedor_tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1rem;
+}
+.tarjeta{
+    background-color: rgb(240, 235, 227);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    padding: 15px;
+    margin: 20px;
+}
+.tarjeta img{
+   width: 300px;
+   display: block;
+   margin: 0 auto;
+
+}
+.tarjeta h3{
+    padding: 10px;
+ }
+
+ .tarjeta button{
+    padding: 6px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+/* estilos contacto */
+.contacto{
+    background-color: rgb(242, 242, 242);
+    padding-top: 20px;
+}
+.contacto .container{
+    width: 40vw;
+}
+
+.contacto .btn{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.contacto .btn:hover{
+    opacity: 0.85;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+} 
+
+/* footer */
+hr{
+    margin: 20px 0;
+}
+
+.contenedor_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.txt span{
+    font-weight: 800;
+}
+.txt p{
+   padding-right: 10px;
+}
+.txt li, .txt a{
+  list-style: none;
+  color: black;
+}
+.txt ul{
+    padding-left: 0;
+}
+.txt li{
+    padding-bottom: 5px;
+}
+.txt{
+    color: rgb(87, 91, 94);
+    line-height: 1.4;
+}
+
+.colum1{
+   width: 300px;
+  
+}
+.colum2{
+    width: 200px;
+  
+}
+.copyright{
+    background-color: rgb(242, 242, 242);
+    color: rgb(87, 91, 94)    ;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.copyright a{
+    color: rgb(87, 91, 94);
+    font-weight: 800;
+  
+}
+
+@media (max-width:1108px) {
+    
+        .contenedor_tarjetas{
+         
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .contacto .container{
+            width: 100vw;
+        }
+    
+}
+
+
+@media (max-width:680px) {
+    
+    .contenedor_tarjetas{
+     
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor_footer{
+      text-align: center;
+    
+    }
+
+
+}
